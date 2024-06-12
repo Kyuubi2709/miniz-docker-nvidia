@@ -13,7 +13,7 @@ RUN wget https://github.com/miniZ-miner/miniZ/releases/download/${MINIZ_VERSION}
     rm /tmp/miniZ.tar.gz
 
 # Make the miniz binary executable
-RUN chmod +x /opt/miniz/miniZ
+RUN chmod +x /opt/miniZ/miniZ
 
 # Copy the entrypoint script into the image
 COPY entrypoint.sh /opt/miniz/entrypoint.sh
