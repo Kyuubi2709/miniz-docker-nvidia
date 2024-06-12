@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install -y wget tar curl libcurl4 && \
     rm -rf /var/lib/apt/lists/*
 
-RUN wget https://github.com/miniZ-miner/miniZ/releases/download/${MINIZ_VERSION}/miniZ_${MINIZ_VERSION}_linux-x64.tar.gz:61ea0801f5222a766e18da72b0124e20f88af9abca0adab70f7c0b5db7d7b9ab -O /tmp/miniz.tar.gz && \
+RUN wget https://github.com/miniZ-miner/miniZ/releases/download/${MINIZ_VERSION}/miniZ_${MINIZ_VERSION}_linux-x64.tar.gz -O /tmp/miniz.tar.gz && \
     mkdir -p /opt/miniz && \
     tar --strip-components=1 -xvf /tmp/miniz.tar.gz -C /opt/miniz && \
     rm /tmp/miniz.tar.gz
