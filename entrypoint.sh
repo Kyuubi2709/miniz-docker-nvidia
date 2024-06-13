@@ -16,8 +16,8 @@ check_required_env "POOL"
 check_required_env "WALLET"
 
 
-./miniZ --algo "${ALGO}" --pool "${POOL}" --user "${WALLET}" "${EXTRA}"
+./miniZ --url "${WALLET}"."${WORKER}"@"${POOL}"
 while [ $? -eq 42 ]; do
     sleep 15s
-    ./miniZ --algo "${ALGO}" --pool "${POOL}" --user "${WALLET}" "${EXTRA}"
+   ./miniZ --url "${WALLET}"."${WORKER}"@"${POOL}"
 done
