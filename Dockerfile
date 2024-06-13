@@ -28,6 +28,7 @@ WORKDIR /opt/miniz
 ENV ALGO=""
 ENV POOL=""
 ENV WALLET=""
+ENV WORKER=""
 ENV EXTRA=""
 
 # Set the entrypoint to the entrypoint script
