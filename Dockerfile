@@ -9,7 +9,7 @@ RUN apt-get update && \
 
 RUN wget https://github.com/miniZ-miner/miniZ/releases/download/${MINIZ_VERSION}/miniZ_${MINIZ_VERSION}_linux-x64.tar.gz -O /tmp/miniZ.tar.gz && \
     mkdir -p /opt/miniz && \
-    tar --strip-components=1 -xvf /tmp/miniZ.tar.gz -C /opt/miniz && \
+    tar -xvf /tmp/miniZ.tar.gz -C /opt/miniz && \
     rm /tmp/miniZ.tar.gz
 
 # Make the miniz binary executable
