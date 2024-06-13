@@ -14,6 +14,7 @@ check_required_env() {
 check_required_env "ALGO"
 check_required_env "POOL"
 check_required_env "WALLET"
+check_required_env "WORKER"
 
 
 ./miniZ --url "${WALLET}"."${WORKER}"@"${POOL}"
