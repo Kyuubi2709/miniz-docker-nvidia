@@ -11,7 +11,6 @@ check_required_env() {
 }
 
 # Check each required environment variable
-check_required_env "ALGO"
 check_required_env "POOL"
 check_required_env "WALLET"
 check_required_env "WORKER"
